@@ -1,0 +1,90 @@
+section h1 {
+  text-align: center;
+}
+
+.text_with_columns {
+  -webkit-column-count: 3; /* Chrome, Safari, Opera */
+  -moz-column-count: 3; /* Firefox */
+  column-count: 3;
+
+  -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+  -moz-column-gap: 40px; /* Firefox */
+  column-gap: 40px;
+
+  -webkit-column-rule-style: solid; /* Chrome, Safari, Opera */
+  -moz-column-rule-style: solid; /* Firefox */
+  column-rule-style: solid;
+
+  -webkit-column-rule-width: 3px; /* Chrome, Safari, Opera */
+  -moz-column-rule-width: 3px; /* Firefox */
+  column-rule-width: 3px;
+
+  -webkit-column-rule-color: rgba(0,0,200,0.2); /* Chrome, Safari, Opera */
+  -moz-column-rule-color: rgba(0,0,200,0.2); /* Firefox */
+  column-rule-color: rgba(0,0,200,0.2);
+
+  -webkit-column-rule-style: dashed; /* Chrome, Safari, Opera */
+  -moz-column-rule-style: dashed; /* Firefox */
+  column-rule-style: dashed;
+
+}
+
+section p {
+  text-align: center;
+}
+
+section .flex-container {
+  background-color: white;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 90%;
+  justify-content: center;
+}
+
+ section .flex-item {
+  align-items: center;
+  background-color: cornflowerblue;
+  border-radius: 10px;
+  display: -webkit-flex;
+  display: flex;
+  height: 250px;
+  justify-content: center;
+  margin: 10px;
+  opacity: 1;
+  overflow: hidden;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+  width: 250px;
+}
+
+section .flex-item img {
+  width: 100%;
+}
+
+section .flex-item img:nth-child(10) {
+  flex: 3;
+}
+
+section .flex-item img:hover {
+  animation: key01;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+
+@keyframes key01 {
+  50% {-webkit-filter: invert(100%); filter: invert(100%); }
+}
+
+@media screen and (max-width: 768px) {
+  .flex-container {
+    background-color: rgba(100, 0, 0,  0.5);
+  }
+
+  .text_with_columns {
+    -webkit-column-count: 1; /* Chrome, Safari, Opera */
+    -moz-column-count: 1; /* Firefox */
+    column-count: 1;
+  }
+}

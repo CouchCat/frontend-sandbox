@@ -1,0 +1,143 @@
+@font-face {
+   font-family: myLobster;
+   src: url('https://fonts.googleapis.com/css?family=Bungee+Inline|Roboto');
+}
+
+@import url('https://fonts.googleapis.com/css?family=Bungee+Inline|Roboto');
+
+@media screen and (min-width: 768px) {
+  body > .row {
+    height: inherit;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+/*------------------------- Globals  -------------------------*/
+
+html {
+  font-family: 'Bungee Inline', cursive;
+  //font-family: 'Roboto', sans-serif;
+  min-height: 100%;
+  position: relative;
+}
+
+
+.col-sm-3 {
+  padding: 0;
+  background-color: rgba(200, 100, 0, 0.1);
+  margin-bottom: 50px;
+}
+
+.col-sm-9 {
+  padding: 0;
+  margin-bottom: 50px;
+}
+
+.col-sm-9 .row:nth-child(2) {
+  //background-color: rgba(10, 10, 250, 0.2);
+  margin-top: 50px;
+}
+
+.col-sm-12 {
+  padding: 0;
+  //background-color: rgba(0, 100, 100, 0.2);
+
+}
+
+.col-sm-9 {
+  //background-color: rgba(0, 100, 0, 0.2);
+}
+
+.row {
+  margin: 0;
+}
+
+/*------------------------- Left Column -------------------------*/
+
+.img-circle {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.page_title {
+  text-align: center;
+  border-top: 3px dotted black;
+  border-bottom: 3px dotted black;
+  margin: 10px;
+}
+
+.side_text {
+  padding: 10px;
+  text-align: justify;
+}
+
+.well {
+  margin: 10px;
+}
+
+#fixed_video {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 80vh;
+}
+
+/*------------------------- Right Column  -------------------------*/
+
+section {
+  padding: 0;
+  padding-bottom: 20px;
+  margin: 0;
+  width: 100%;
+}
+
+.navbar {
+  border-radius: 0;
+  background-color: rgba(50,150,200,1);
+  margin: 0;
+}
+
+.navbar + .container-fluid {
+  padding: 0;
+}
+
+.navbar-toggle {
+  border: 1px solid white;
+}
+
+.navbar-toggle span {
+  background-color: white;
+}
+
+section .flex-container {
+  background-color: white;
+  display: -webkit-flex;
+  display: flex;
+  height: 250px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+section .flex-item > img {
+  width: 100%;
+}
+
+#banner_text {
+  position: absolute;
+  top: 200px;
+  z-index: 2;
+  background-color: rgba(255,255,255,0.4);
+  padding: 10px;
+  font-style: bold;
+  font-family: monospace;
+  font-size: 2vw;
+  color: rgba(200,200,0, 0.8);
+  text-transform: capitalize;
+}
